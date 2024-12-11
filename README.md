@@ -15,6 +15,8 @@ fe: fetch
 ps: push
 psf: push --force--with-lease
 pl: pull
+plm: pull origin main
+plo: pull origin
 sh: stash
 shp: stash pop
 shl: stash list
@@ -46,6 +48,8 @@ git config --global alias.fe 'fetch'
 git config --global alias.ps 'push'
 git config --global alias.psf 'push --force-with-lease'
 git config --global alias.pl 'pull'
+git config --global alias.plm 'pull origin main'
+git config --global alias.plo 'pull origin'
 git config --global alias.sh 'stash'
 git config --global alias.shp 'stash pop'
 git config --global alias.shl 'stash list'
