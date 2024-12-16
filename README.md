@@ -4,7 +4,7 @@
 ```
 all: config --global alias.all "config --get-regexp ^alias\."
 st: status
-ad: add .
+ad: !sh -c "git add . && git status"
 co: checkout
 cm: commit -m
 cma: commit --amend
@@ -37,7 +37,7 @@ cp: cherry-pick
 ```
 git config --global alias.all "config --get-regexp ^alias\."
 git config --global alias.st 'status'
-git config --global alias.ad 'add .'
+git config --global alias.ad '!sh -c "git add . && git status"'
 git config --global alias.co 'checkout'
 git config --global alias.cm 'commit -m'
 git config --global alias.cma 'commit --amend'
