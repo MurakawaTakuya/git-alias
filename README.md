@@ -12,6 +12,7 @@ cmf: commit --fixup
 br: branch
 lo: log --oneline
 fe: fetch
+fp: !sh -c "git fetch && git pull origin main"
 ps: push
 psf: push --force--with-lease
 pl: pull
@@ -45,6 +46,7 @@ git config --global alias.cmf 'commit --fixup'
 git config --global alias.br 'branch'
 git config --global alias.lo 'log --oneline'
 git config --global alias.fe 'fetch'
+git config --global alias.fp '!sh -c "git fetch && git pull origin main"'
 git config --global alias.ps 'push'
 git config --global alias.psf 'push --force-with-lease'
 git config --global alias.pl 'pull'
