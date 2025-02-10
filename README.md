@@ -25,7 +25,9 @@ sw: switch
 swc: switch -c
 swm: switch main
 rb: rebase
-rbi: rebase -i
+rba: rebase --abort
+rbc: rebase --continue
+rbi: rebase -i --autosquash
 rbm: rebase main
 rs: reset
 rss: reset --soft
@@ -59,7 +61,9 @@ git config --global alias.sw 'switch'
 git config --global alias.swc 'switch -c'
 git config --global alias.swm 'switch main'
 git config --global alias.rb 'rebase'
-git config --global alias.rbi 'rebase -i'
+git config --global alias.rba 'rebase --abort'
+git config --global alias.rbc 'rebase --continue'
+git config --global alias.rbi 'rebase -i --autosquash'
 git config --global alias.rbm 'rebase main'
 git config --global alias.rs 'reset'
 git config --global alias.rss 'reset --soft'
