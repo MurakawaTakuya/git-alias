@@ -1,6 +1,6 @@
 # git-alias
 
-## alias list
+## 使用可能なコマンドのリスト
 ```
 all: config --global alias.all "config --get-regexp ^alias\."
 st: status
@@ -36,7 +36,7 @@ df: diff
 cp: cherry-pick
 ```
 
-## alias command list
+## エイリアスの設定
 ```
 git config --global alias.all "config --get-regexp ^alias\."
 git config --global alias.st 'status'
@@ -72,7 +72,7 @@ git config --global alias.df 'diff'
 git config --global alias.cp 'cherry-pick'
 ```
 
-## alias deletion
+## エイリアスの削除
 (例えばpsを無くしたい場合)
 ```
 git config --global --unset alias.ps
