@@ -13,7 +13,7 @@ br: branch
 lo: log --oneline
 fe: fetch
 fp: !sh -c "git fetch && git pull"
-ps: push -u
+ps: push
 psf: push --force--with-lease
 pl: pull
 plm: pull origin main
@@ -49,7 +49,7 @@ git config --global alias.br 'branch'
 git config --global alias.lo 'log --oneline'
 git config --global alias.fe 'fetch'
 git config --global alias.fp '!sh -c "git fetch && git pull"'
-git config --global alias.ps 'push -u'
+git config --global alias.ps 'push'
 git config --global alias.psf 'push --force-with-lease'
 git config --global alias.pl 'pull'
 git config --global alias.plm 'pull origin main'
