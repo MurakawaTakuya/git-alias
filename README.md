@@ -18,7 +18,7 @@ psf: push --force--with-lease
 pl: pull
 plm: pull origin main
 plo: pull origin
-sh: stash
+sh: stash -u
 shp: stash pop
 sha: stash apply
 shl: stash list
@@ -55,7 +55,7 @@ git config --global alias.psf 'push --force-with-lease'
 git config --global alias.pl 'pull'
 git config --global alias.plm 'pull origin main'
 git config --global alias.plo 'pull origin'
-git config --global alias.sh 'stash'
+git config --global alias.sh 'stash -u'
 git config --global alias.shp 'stash pop'
 git config --global alias.sha 'stash apply'
 git config --global alias.shl 'stash list'
